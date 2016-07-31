@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 	<base target="_blank">
 	<meta charset="utf-8">
-	<title>主页</title>
+	<title>Prime Studio</title>
 	<link rel="stylesheet" href="CSS/general.css" type="text/css" />
 	<script type="text/javascript">
 		function jumpto(url) {
 			window.location.href=url;
 		}
 	</script>
-</head>
-<body>
-	<h1>欢迎来到WillE的个人网站</h1>
-	<span id="time"></span>
-	<script type="text/javascript" src="JavaScript/time.js"></script>
-	<hr />
-	<h4>以下为您的信息</h4>
-	<span id="No.1"></span>
-	<script type="text/javascript" src="JavaScript/check.js"></script>
-	<input type="submit" onclick=jumpto("List.html") value="进入列表页"/>
+	</head>
+	<body>
+<h1>Welcome to Prime Studio's web site(We are still in building it)</h1>
+<h4>Current Time:</h4>
+<span id="time"></span> 
+<script type="text/javascript" src="JavaScript/time.js"></script>
+<hr />
+<h4>These are your information</h4>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>  
+<script type="text/javascript">  
+        document.write("<p>Your IP : "+returnCitySN["cip"]+"</p>");
+		document.write("<p>you are from "+returnCitySN["cname"]+" . Welcome to you .</p>");
+</script> 
+<span id="No.1"></span> 
+<script type="text/javascript" src="/JavaScript/check.js"></script>
+<input type="submit" onclick=jumpto("List.html") value="Get into the list"/>
 </body>
 </html>
