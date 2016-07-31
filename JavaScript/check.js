@@ -1,27 +1,31 @@
 ﻿function screensize() {
 
 	var txt=document.getElementById("No.1");
+<<<<<<< HEAD
 	txt.innerHTML="Screen&nbsp:&nbspHeight:&nbsp"+innerHeight+"&nbsp;&nbspWidth&nbsp:&nbsp"+innerWidth;
+=======
+	txt.innerHTML="屏幕大小为:高:"+innerHeight+";宽:"+innerWidth;
+>>>>>>> parent of 2e7f37c... using English and add IP information.
 
 	setTimeout(screensize,1000)
 }
 
-document.write("<p>Browser：")
+document.write("<p>浏览器：")
 document.write(navigator.appName + "</p>")
 
-document.write("<p>Browser Versions：")
+document.write("<p>浏览器版本：")
 document.write(navigator.appVersion + "</p>")
 
-document.write("<p>Code：")
+document.write("<p>代码：")
 document.write(navigator.appCodeName + "</p>")
 
-document.write("<p>Platform：")
+document.write("<p>平台：")
 document.write(navigator.platform + "</p>")
 
-document.write("<p>Cookies isEnabled：")
+document.write("<p>Cookies 启用：")
 document.write(navigator.cookieEnabled + "</p>")
 
-document.write("<p>Your Agent：")
+document.write("<p>浏览器的用户代理报头：")
 document.write(navigator.userAgent + "</p>")
 
 screensize();
