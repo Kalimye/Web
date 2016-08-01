@@ -1,7 +1,7 @@
 ﻿function clock() {
 	var txt=document.getElementById("time");
 	var itime=new Date();
-	txt.innerHTML="Year: "+(itime.getFullYear()+1)+" Month: "+itime.getMonth()+" Day: "+itime.getDate()+" Time: "+itime.getHours()+"."+itime.getMinutes()+"."+itime.getSeconds();
+	txt.innerHTML="Year: "+itime.getFullYear()+" Month: "+(itime.getMonth()+1)+" Day: "+itime.getDate()+" Time: "+itime.getHours()+"."+itime.getMinutes()+"."+itime.getSeconds();
 	setTimeout(clock, 500);
 }
 clock();

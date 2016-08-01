@@ -1,0 +1,25 @@
+/* CSS Document */
+
+.MumberBox{
+	padding: 10px;
+	border: groove 4.5px;
+	margin-top:20px;
+	margin-bottom:0;
+	margin-left:8px;
+	margin-right:0;
+	height:270px;
+	float:left;
+	width:186.4px;
+	background-color:white;
+	display: inline;
+}
+.BigBox{
+	width:900px;
+	height:auto;
+	background-color: blue;
+	margin:0 auto;
+}
+.BoxHeader{
+	font:Arial;
+	font-size:18px;
+}
